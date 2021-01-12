@@ -16,70 +16,16 @@
 <script>
 export default {
   name: "HomeIcons",
+  props: {
+    list: Array
+  },
   data() {
-    return {
-      iconList: [
-        {
-          id: "0001",
-          imgUrl:
-            "https://imgs.qunarzz.com/sight/p0/201403/07/1d6628b7a44cfc762d3c0fc88a68663c.jpg_250x250_c6681fb5.jpg",
-          desc: "景点门票景点门票景点门票景点门票"
-        },
-        {
-          id: "0002",
-          imgUrl:
-            "https://imgs.qunarzz.com/sight/p0/201403/07/1d6628b7a44cfc762d3c0fc88a68663c.jpg_250x250_c6681fb5.jpg",
-          desc: "泡温泉"
-        },
-        {
-          id: "0003",
-          imgUrl:
-            "https://imgs.qunarzz.com/sight/p0/201403/07/1d6628b7a44cfc762d3c0fc88a68663c.jpg_250x250_c6681fb5.jpg",
-          desc: "滑雪季"
-        },
-        {
-          id: "0004",
-          imgUrl:
-            "https://imgs.qunarzz.com/sight/p0/201403/07/1d6628b7a44cfc762d3c0fc88a68663c.jpg_250x250_c6681fb5.jpg",
-          desc: "动植物园"
-        },
-        {
-          id: "0005",
-          imgUrl:
-            "https://imgs.qunarzz.com/sight/p0/201403/07/1d6628b7a44cfc762d3c0fc88a68663c.jpg_250x250_c6681fb5.jpg",
-          desc: "景点门票"
-        },
-        {
-          id: "0006",
-          imgUrl:
-            "https://imgs.qunarzz.com/sight/p0/201403/07/1d6628b7a44cfc762d3c0fc88a68663c.jpg_250x250_c6681fb5.jpg",
-          desc: "泡温泉"
-        },
-        {
-          id: "0007",
-          imgUrl:
-            "https://imgs.qunarzz.com/sight/p0/201403/07/1d6628b7a44cfc762d3c0fc88a68663c.jpg_250x250_c6681fb5.jpg",
-          desc: "滑雪季"
-        },
-        {
-          id: "0008",
-          imgUrl:
-            "https://imgs.qunarzz.com/sight/p0/201403/07/1d6628b7a44cfc762d3c0fc88a68663c.jpg_250x250_c6681fb5.jpg",
-          desc: "动植物园"
-        },
-        {
-          id: "0009",
-          imgUrl:
-            "https://imgs.qunarzz.com/sight/p0/201403/07/1d6628b7a44cfc762d3c0fc88a68663c.jpg_250x250_c6681fb5.jpg",
-          desc: "滑雪季"
-        }
-      ]
-    };
+    return {};
   },
   computed: {
     pages() {
       const pages = [];
-      this.iconList.forEach((item, index) => {
+      this.list.forEach((item, index) => {
         const page = Math.floor(index / 8);
         if (!pages[page]) {
           pages[page] = [];
