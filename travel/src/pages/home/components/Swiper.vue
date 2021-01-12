@@ -22,12 +22,12 @@ export default {
         {
           id: "0001",
           imgUrl:
-            "https://img1.qunarzz.com/sight/p0/2011/54/545a88fff97b91a3a3.water.jpg_256x160_4bb21b58.jpg"
+            "https://imgs.qunarzz.com/vs_ceph_vcimg/569cae4ae98e9793f7341e85eed73c54.jpeg"
         },
         {
           id: "0002",
           imgUrl:
-            "https://img1.qunarzz.com/sight/p0/1605/68/683895595a535e2090.img.jpg_256x160_8551663a.jpg"
+            "https://imgs.qunarzz.com/vs_ceph_vcimg/f03f5ac90ae59d0d9c6332a2bfd9782e.jpeg"
         }
       ]
     };
