@@ -3,6 +3,8 @@
 import Vue from 'vue'
 import App from './App'
 import router from './router'
+import VueAwesomeSwiper from 'vue-awesome-swiper'
+import 'swiper/dist/css/swiper.css'
 import 'styles/reset.css'
 // 移动端1像素边框的问题？因为有的手机分辨率比较高，但是如果在页面上写border-bottom：1px；
 //在1倍屏中是1px， 但是在2倍屏中是2px，所以需要解决这个问题；
@@ -13,8 +15,12 @@ import './assets/styles/border.css'
 import fastClcik from 'fastclick';
 import 'styles/iconfont.css'
 
+
+
 Vue.config.productionTip = false
 fastClcik.attach(document.body)
+
+Vue.use(VueAwesomeSwiper)
 
 /* eslint-disable no-new */
 new Vue({
