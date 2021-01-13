@@ -15,6 +15,9 @@ import './assets/styles/border.css'
 import fastClcik from 'fastclick';
 import 'styles/iconfont.css'
 
+//vuex中存放的数据
+import store from './store'
+
 
 
 Vue.config.productionTip = false
@@ -26,6 +29,7 @@ Vue.use(VueAwesomeSwiper)
 new Vue({
   el: '#app',
   router,
+  store,
   components: { App },
   template: '<App/>'
 })//路由就是根据网址的不同，返回不同的内容给用户
