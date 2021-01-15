@@ -18,6 +18,8 @@ import 'styles/iconfont.css'
 //vuex中存放的数据
 import store from './store'
 
+import 'babel-polyfill'
+
 
 
 Vue.config.productionTip = false
